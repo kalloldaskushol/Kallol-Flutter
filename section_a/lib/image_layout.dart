@@ -5,10 +5,8 @@ class ImageLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( //! Why Scaffold is used here? 
       body: Image.asset("image/OBTQ.jpg")
-
-
     );
   }
 }

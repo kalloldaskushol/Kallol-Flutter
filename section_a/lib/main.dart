@@ -16,8 +16,9 @@
 
 // 2nd class
 import 'package:flutter/material.dart';
-import 'package:section_a/home_page.dart';
-import 'package:section_a/image_layout.dart';
+import 'package:section_a/card_design.dart';
+// import 'package:section_a/image_layout.dart';
+// import 'package:section_a/layout_design.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    
+    return MaterialApp( //! Why MaterialApp is used here?
         debugShowCheckedModeBanner: false, 
-        home: ImageLayout()
+        home: CardDesign(),
       );
   }
 }
