@@ -16,7 +16,11 @@
 
 // 2nd class
 import 'package:flutter/material.dart';
-import 'package:section_a/card_design.dart';
+import 'package:section_a/list_tile.dart';
+// import 'package:section_a/profile_card.dart';
+// import 'package:section_a/row_example.dart';
+// import 'package:section_a/card_design.dart';
+// import 'package:section_a/image_layout.dart';
 // import 'package:section_a/image_layout.dart';
 // import 'package:section_a/layout_design.dart';
 
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp( //! Why MaterialApp is used here?
         debugShowCheckedModeBanner: false, 
-        home: CardDesign(),
+        home: ListTilee(),
       );
   }
 }
