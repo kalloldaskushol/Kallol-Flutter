@@ -11,7 +11,7 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
 
-
+  //! These TextEditingController instances are used to manage the input from the user for email, password, and confirm password fields. They allow us to retrieve the text entered by the user when we need to perform actions like signing up.
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
@@ -39,11 +39,11 @@ class _RegisterState extends State<Register> {
     } catch (e) {
       if(mounted){
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("e $e"))
+          SnackBar(content: Text("$e"))
         );
       }
     }
-  }
+  } // signUp function end
 
 
 

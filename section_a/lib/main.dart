@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:section_a/auth/auth_gate.dart';
-import 'package:section_a/practice_tutorial.dart';
+import 'package:section_a/auth/auth_gate.dart';
+import 'package:section_a/pages/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 void main() async {
   // SuperBase Initialization
@@ -17,11 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    return MaterialApp( //! Why MaterialApp is used here?
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Kallol-Flutter", 
-        // home: AuthGate(),
-        home: PracticeTutorial(),
+        home: const AuthGate(),
       );
   }
 }

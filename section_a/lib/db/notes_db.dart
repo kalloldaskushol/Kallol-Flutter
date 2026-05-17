@@ -7,11 +7,12 @@ class NotesDb {
 
   // insert
   Future<void> insertNotes(String content) async {
+    
     final email = AuthServices().getCurrentEmail();
     await notesTable.insert( // will take map
       {
         "content": content,
-        "email": email
+        "email": email,
       }
     );
   }
